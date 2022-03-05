@@ -1,0 +1,52 @@
+@function toRem($value){
+    $remVal: ($value / 16) + rem;
+    @return $remVal;
+}
+
+.Navbar{
+    display: flex;
+    width: 100%;
+    height: toRem(90);
+    position: relative;
+    padding-top: 25px;
+    color: #f5f5f5;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.Navbar-brand{
+    position: absolute;
+    left: 30px;
+    margin: 0;
+}
+
+.Navbar-options{
+    position: absolute;
+    display: flex;
+    right: 30px;
+    width: 700px;
+    justify-content: space-between;
+}
+
+.link-brand{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    &:hover{
+        color:black;
+    }
+}
+
+.link-options{
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+    &:hover{
+        color:black;
+    }
+}
+
+.search{
+    width:190px;
+    border-width: 1px;
+    border-radius: 3px;
+}
